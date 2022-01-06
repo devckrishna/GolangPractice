@@ -31,9 +31,9 @@ func increaseCount() {
 }
 
 func readAndWrite() {
-	read()
-	read()
-	write()
+	go read()
+	go read()
+	go write()
 
 	time.Sleep(5 * time.Second)
 	fmt.Println("Done")
